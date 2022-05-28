@@ -231,3 +231,110 @@ $color1: #5e81fe;
 		padding-top: 173px;
 	}
 }
+.features {
+	height: 885px;
+	background-image: url(img/clouds.svg);
+	background-repeat: no-repeat;
+	.info {
+		&__sub-title {
+			padding-top: 171px;
+		}
+
+		&__title {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 30px;
+			text-align: center;
+			color: #3d4f9f;
+		}
+	}
+	.tools {
+		width: 761px;
+		height: 254px;
+		margin: 0 auto;
+		padding-top: 92px;
+		display: flex;
+		align-items: center;
+		&__item {
+			width: 140px;
+			height: 254px;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+		}
+
+		&__logo {
+			width: 69px;
+			height: 69px;
+		}
+
+		&__title {
+			font-family: "Open Sans", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 25px;
+			text-align: center;
+			color: #4074f8;
+			padding-top: 33px;
+		}
+
+		&__text {
+			text-align: center;
+			padding-top: 25px;
+			font-family: Open Sans;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 19px;
+			color: #adb3cb;
+		}
+		&__line {
+		}
+	}
+	.bottom {
+		&__button-read {
+		}
+
+		&__symbol {
+		}
+
+		&__symbol-line {
+		}
+
+		&__symbol-or {
+		}
+
+		&__button-get {
+		}
+	}
+}
+.stats {
+	&__img {
+	}
+
+	&__big-text {
+	}
+
+	&__text {
+	}
+	.blue {
+		&__img {
+		}
+
+		&__big-text {
+		}
+
+		&__text {
+		}
+	}
+	.sky {
+		&__img {
+		}
+
+		&__big-text {
+		}
+
+		&__text {
+		}
+	}
+}

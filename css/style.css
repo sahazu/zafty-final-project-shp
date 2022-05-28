@@ -337,3 +337,75 @@ img {
   width: 653px;
   padding-top: 173px;
 }
+
+.features {
+  height: 885px;
+  background-image: url(img/clouds.svg);
+  background-repeat: no-repeat;
+}
+
+.features .info__sub-title {
+  padding-top: 171px;
+}
+
+.features .info__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #3d4f9f;
+}
+
+.features .tools {
+  width: 761px;
+  height: 254px;
+  margin: 0 auto;
+  padding-top: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .tools__item {
+  width: 140px;
+  height: 254px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .tools__logo {
+  width: 69px;
+  height: 69px;
+}
+
+.features .tools__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #4074f8;
+  padding-top: 33px;
+}
+
+.features .tools__text {
+  text-align: center;
+  padding-top: 25px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+  color: #adb3cb;
+}
