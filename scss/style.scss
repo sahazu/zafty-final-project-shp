@@ -145,7 +145,7 @@ body {
 	.info {
 		background-image: url(../img/header/bg.svg);
 		background-repeat: no-repeat;
-		height: 570px;
+		min-height: 570px;
 		background-size: cover;
 		background-position: center bottom;
 		&__button {
@@ -170,7 +170,7 @@ body {
 			color: #5e81ff;
 		}
 		&__text {
-			width: 502px;
+			max-width: 502px;
 			margin: 0 auto;
 			padding-top: 28px;
 		}
@@ -184,23 +184,21 @@ main {
 	height: 145px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	&__logo {
-		margin-right: 76.5px;
 	}
 	&__logo:last-child {
-		margin-right: 0px;
 	}
 }
 .plan-and-manage {
-	height: 776px;
+	min-height: 776px;
 	background-color: #f5f8ff;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	.info {
-		width: 413px;
-		height: 352px;
-		padding-top: 208px;
+		max-width: 413px;
+		margin-left: 100px;
 		&__sub-title {
 			text-align: left;
 			padding-top: 0;
@@ -251,8 +249,16 @@ main {
 		}
 	}
 	&__pic {
-		width: 653px;
-		padding-top: 173px;
+		margin-top: 77px;
+		background-image: url(../img/plan-and-manage/02.png);
+		background-size: contain;
+		width: 660px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 440px;
+	}
+	&__pic1 {
+		display: none;
 	}
 }
 .features {
@@ -262,6 +268,9 @@ main {
 	background-size: cover;
 	background-size: 90%;
 	background-position: center center;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
 	.info {
 		&__sub-title {
 			padding-top: 171px;
@@ -637,17 +646,19 @@ main {
 	}
 }
 .pricing {
-	height: 700px;
+	min-height: 700px;
+	background: linear-gradient(180deg, #eaf0ff 0%, #f6f9ff 100%);
 	.base-and-pro {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
+		align-items: center;
 		&__sub-title {
 			font-size: 15px;
 			margin-bottom: 40px;
 			padding-top: 70px;
 		}
 		&__cost {
-			font-weight: 400;
+			font-weight: 300;
 			font-size: 60px;
 			line-height: 45px;
 			text-align: center;
@@ -663,11 +674,63 @@ main {
 			max-width: 300px;
 			color: #8a8d9b;
 		}
-		.base {
-			margin-right: 140px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.header {
+		.nav {
+			.menu {
+				margin-left: 20px;
+				&__logo {
+				}
+			}
+			.activites {
+				margin-right: 20px;
+				&__get-started {
+					margin-right: 0;
+				}
+			}
 		}
-		.pro {
-			margin-right: 140px;
+	}
+	.plan-and-manage {
+		flex-flow: column;
+		.info {
+			margin: 0;
+			margin-top: 70px;
+			&__sub-title {
+				text-align: center;
+			}
+			&__title {
+				text-align: center;
+			}
+			&__text {
+				text-align: center;
+			}
+			&__buttons {
+				justify-content: center;
+			}
+		}
+		&__pic {
+			margin-right: 90px;
+			margin-top: 70px;
+		}
+	}
+	.base-and-pro {
+		flex-flow: column;
+		.ultra {
+			padding-bottom: 100px;
+		}
+	}
+	.newsletter {
+		flex-flow: column;
+		.info {
+			text-align: center;
+			margin-right: 0;
+			margin-bottom: 40px;
+			.text {
+				text-align: center;
+			}
 		}
 	}
 }

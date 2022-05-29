@@ -221,7 +221,7 @@ body {
 .header .info {
   background-image: url(../img/header/bg.svg);
   background-repeat: no-repeat;
-  height: 570px;
+  min-height: 570px;
   background-size: cover;
   background-position: center bottom;
 }
@@ -262,7 +262,7 @@ body {
 }
 
 .header .info__text {
-  width: 502px;
+  max-width: 502px;
   margin: 0 auto;
   padding-top: 28px;
 }
@@ -282,21 +282,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.customers__logo {
-  margin-right: 76.5px;
-}
-
-.customers__logo:last-child {
-  margin-right: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .plan-and-manage {
-  height: 776px;
+  min-height: 776px;
   background-color: #f5f8ff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,12 +295,14 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .plan-and-manage .info {
-  width: 413px;
-  height: 352px;
-  padding-top: 208px;
+  max-width: 413px;
+  margin-left: 100px;
 }
 
 .plan-and-manage .info__sub-title {
@@ -376,8 +369,17 @@ main {
 }
 
 .plan-and-manage__pic {
-  width: 653px;
-  padding-top: 173px;
+  margin-top: 77px;
+  background-image: url(../img/plan-and-manage/02.png);
+  background-size: contain;
+  width: 660px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 440px;
+}
+
+.plan-and-manage__pic1 {
+  display: none;
 }
 
 .features {
@@ -387,6 +389,16 @@ main {
   background-size: cover;
   background-size: 90%;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .features .info__sub-title {
@@ -916,16 +928,22 @@ main {
 }
 
 .pricing {
-  height: 700px;
+  min-height: 700px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaf0ff), to(#f6f9ff));
+  background: -webkit-linear-gradient(top, #eaf0ff 0%, #f6f9ff 100%);
+  background: -o-linear-gradient(top, #eaf0ff 0%, #f6f9ff 100%);
+  background: linear-gradient(180deg, #eaf0ff 0%, #f6f9ff 100%);
 }
 
 .pricing .base-and-pro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pricing .base-and-pro__sub-title {
@@ -935,7 +953,7 @@ main {
 }
 
 .pricing .base-and-pro__cost {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 60px;
   line-height: 45px;
   text-align: center;
@@ -953,10 +971,65 @@ main {
   color: #8a8d9b;
 }
 
-.pricing .base-and-pro .base {
-  margin-right: 140px;
-}
-
-.pricing .base-and-pro .pro {
-  margin-right: 140px;
+@media (max-width: 1000px) {
+  .header .nav .menu {
+    margin-left: 20px;
+  }
+  .header .nav .activites {
+    margin-right: 20px;
+  }
+  .header .nav .activites__get-started {
+    margin-right: 0;
+  }
+  .plan-and-manage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .plan-and-manage .info {
+    margin: 0;
+    margin-top: 70px;
+  }
+  .plan-and-manage .info__sub-title {
+    text-align: center;
+  }
+  .plan-and-manage .info__title {
+    text-align: center;
+  }
+  .plan-and-manage .info__text {
+    text-align: center;
+  }
+  .plan-and-manage .info__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan-and-manage__pic {
+    margin-right: 90px;
+    margin-top: 70px;
+  }
+  .base-and-pro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .base-and-pro .ultra {
+    padding-bottom: 100px;
+  }
+  .newsletter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .newsletter .info {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .newsletter .info .text {
+    text-align: center;
+  }
 }
