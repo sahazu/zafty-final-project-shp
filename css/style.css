@@ -382,7 +382,7 @@ main {
 
 .features {
   height: 885px;
-  background-image: url(../../img/features/clouds.svg);
+  background-image: url(../img/features/clouds.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 90%;
@@ -730,7 +730,7 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url(../../img/get-started/clouds.png);
+  background-image: url(../img/get-started/clouds.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #6888ff;
