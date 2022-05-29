@@ -1,5 +1,4 @@
 @import "_null";
-
 $color: #3d4f9f;
 $color1: #5e81fe;
 * {
@@ -50,7 +49,7 @@ body {
 
 .header {
 	.nav {
-		height: 80px;
+		min-height: 80px;
 		background-color: #fff;
 		display: flex;
 		align-items: center;
@@ -181,11 +180,13 @@ main {
 }
 .customers {
 	background-color: #fff;
-	height: 145px;
+	min-height: 145px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	flex-flow: wrap;
 	&__logo {
+		padding: 30px;
 	}
 	&__logo:last-child {
 	}
@@ -262,7 +263,7 @@ main {
 	}
 }
 .features {
-	height: 885px;
+	min-height: 885px;
 	background-image: url(../img/features/clouds.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -285,8 +286,8 @@ main {
 		}
 	}
 	.tools {
-		width: 761px;
-		height: 254px;
+		max-width: 761px;
+		min-height: 254px;
 		margin: 0 auto;
 		margin-top: 92px;
 		display: flex;
@@ -731,6 +732,84 @@ main {
 			.text {
 				text-align: center;
 			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.features {
+		.tools {
+			flex-flow: wrap;
+			&__line {
+				display: none;
+			}
+		}
+		.bottom {
+			margin-bottom: 50px;
+		}
+	}
+	.stats {
+		flex-flow: column;
+		.blue {
+			align-items: start;
+			text-align: left;
+			padding-left: 100px;
+		}
+		.sky {
+			align-items: end;
+			text-align: right;
+			padding-right: 100px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.nav {
+		flex-flow: column;
+		padding: 20px 0;
+		.activites {
+			margin-top: 20px;
+		}
+	}
+	.plan-and-manage__pic {
+		width: 400px;
+		height: 300px;
+		margin-right: 60px;
+	}
+	.signup {
+		flex-flow: column;
+		align-items: start;
+		.save {
+			display: block;
+			margin-top: 20px;
+		}
+	}
+}
+@media (max-width: 430px) {
+	.text,.title,.sub-title {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.bottom__symbol-line {
+		display: none;
+	}
+	.bottom__symbol-or {
+		display: none;
+	}
+	.bottom__button-read {
+		margin-right: 40px;
+	}
+	.stats {
+		.blue {
+			align-items: center;
+			text-align: center;
+		}
+		.sky {
+			align-items: center;
+			text-align: center;
+		}
+	}
+	.footer {
+		.fa-heart{
+			margin-left: 5px;
 		}
 	}
 }

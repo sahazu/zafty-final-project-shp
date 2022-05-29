@@ -72,7 +72,7 @@ body {
 }
 
 .header .nav {
-  height: 80px;
+  min-height: 80px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,7 +275,7 @@ main {
 
 .customers {
   background-color: #fff;
-  height: 145px;
+  min-height: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,6 +284,12 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.customers__logo {
+  padding: 30px;
 }
 
 .plan-and-manage {
@@ -383,7 +389,7 @@ main {
 }
 
 .features {
-  height: 885px;
+  min-height: 885px;
   background-image: url(../img/features/clouds.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,8 +420,8 @@ main {
 }
 
 .features .tools {
-  width: 761px;
-  height: 254px;
+  max-width: 761px;
+  min-height: 254px;
   margin: 0 auto;
   margin-top: 92px;
   display: -webkit-box;
@@ -1031,5 +1037,100 @@ main {
   }
   .newsletter .info .text {
     text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .features .tools {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .features .tools__line {
+    display: none;
+  }
+  .features .bottom {
+    margin-bottom: 50px;
+  }
+  .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .stats .blue {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+    padding-left: 100px;
+  }
+  .stats .sky {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    text-align: right;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 20px 0;
+  }
+  .nav .activites {
+    margin-top: 20px;
+  }
+  .plan-and-manage__pic {
+    width: 400px;
+    height: 300px;
+    margin-right: 60px;
+  }
+  .signup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .signup .save {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .text, .title, .sub-title {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .bottom__symbol-line {
+    display: none;
+  }
+  .bottom__symbol-or {
+    display: none;
+  }
+  .bottom__button-read {
+    margin-right: 40px;
+  }
+  .stats .blue {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .stats .sky {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer .fa-heart {
+    margin-left: 5px;
   }
 }
