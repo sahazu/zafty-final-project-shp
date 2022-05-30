@@ -15,7 +15,7 @@ img {
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 input {
@@ -36,7 +36,6 @@ body {
 .sub-title {
   padding-top: 92px;
   margin-bottom: 16px;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
@@ -47,7 +46,7 @@ body {
 }
 
 .big-title {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 48px;
   line-height: 60px;
   text-align: center;
@@ -55,7 +54,7 @@ body {
 }
 
 .title {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 36px;
   line-height: 45px;
   text-align: center;
@@ -63,7 +62,6 @@ body {
 }
 
 .text {
-  font-family: Roboto;
   font-size: 15px;
   line-height: 29px;
   text-align: center;
@@ -175,6 +173,9 @@ body {
 
 .header .nav .activites .contacts__logo:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .header .nav .activites__get-started {
@@ -262,7 +263,7 @@ body {
 }
 
 .header .info__text {
-  max-width: 502px;
+  max-width: 802px;
   margin: 0 auto;
   padding-top: 28px;
 }
@@ -333,7 +334,6 @@ main {
 }
 
 .plan-and-manage .info__button_blue {
-  font-family: Quicksand;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -354,7 +354,6 @@ main {
 }
 
 .plan-and-manage .info__button_grey {
-  font-family: Quicksand;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -412,7 +411,7 @@ main {
 }
 
 .features .info__title {
-  font-weight: 500;
+  font-weight: 200;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
@@ -456,7 +455,6 @@ main {
 }
 
 .features .tools__title {
-  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -469,7 +467,6 @@ main {
 .features .tools__text {
   text-align: center;
   padding-top: 25px;
-  font-family: Open Sans;
   font-weight: 600;
   font-size: 11px;
   line-height: 19px;
@@ -499,7 +496,7 @@ main {
 .features .bottom__button-read {
   background: #ffd7d7;
   border-radius: 2px;
-  font-family: Quicksand;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -521,7 +518,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Open Sans;
   font-weight: 600;
   font-size: 11px;
   line-height: 19px;
@@ -544,7 +540,7 @@ main {
   background: #d2e1ff;
   border-radius: 2px;
   padding: 13px 16px;
-  font-family: Quicksand;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
@@ -571,7 +567,7 @@ main {
 }
 
 .stats__big-text {
-  font-family: Quicksand;
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   line-height: 83px;
   text-align: right;
@@ -579,7 +575,7 @@ main {
 }
 
 .stats__text {
-  font-family: Quicksand;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -770,7 +766,6 @@ main {
 
 .get-strated .info__text {
   max-width: 712px;
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 15px;
   line-height: 29px;
@@ -847,14 +842,13 @@ main {
 .newsletter .info__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
   color: #3d4f9f;
   margin-bottom: 18px;
 }
 
 .newsletter .info__text {
   width: 330px;
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 27px;
@@ -947,9 +941,10 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 60px;
 }
 
 .pricing .base-and-pro__sub-title {
@@ -959,7 +954,7 @@ main {
 }
 
 .pricing .base-and-pro__cost {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 60px;
   line-height: 45px;
   text-align: center;
@@ -968,7 +963,6 @@ main {
 }
 
 .pricing .base-and-pro__text {
-  font-family: Roboto;
   font-size: 15px;
   line-height: 29px;
   text-align: center;
@@ -1016,10 +1010,17 @@ main {
     margin-top: 70px;
   }
   .base-and-pro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
   }
   .base-and-pro .ultra {
     padding-bottom: 100px;

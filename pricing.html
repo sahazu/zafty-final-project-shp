@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,43 +22,49 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Get started</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <div class="menu">
                 <img class="menu__logo"></img>
-                <a href="index.html" class="menu__link">Home</a>
-                <a class="menu__link">Blog</a>
-                <a href="pricing.html" class="menu__link menu__link_selected">Pricing</a>
+                <a href="index.html" class="menu__link">Главная</a>
+                <a class="menu__link">Документация</a>
+                <a href="pricing.html" class="menu__link menu__link_selected">Цены</a>
             </div>
             <div class="activites">
                 <div class="contacts">
-                    <img class="contacts__logo" src="img/header/contacts/01.svg" alt="logo"></img>
-                    <img class="contacts__logo" src="img/header/contacts/02.svg" alt="logo"></img>
+                    <a href="https://telegram.org/" class="contacts__logo""><img class=" contacts__logo"
+                        src="img/header/contacts/01.svg" alt="logo"></img></a>
+                    <a href="https://twitter.com/?lang=ru" class="contacts__logo""><img class=" contacts__logo"
+                        src="img/header/contacts/02.svg" alt="logo"></img></a>
                 </div>
-                <a href="getstarted.html" class="activites__get-started__link activites__get-started">Get started</a>
+                <a href="getstarted.html" class="activites__get-started__link activites__get-started">Начни уже
+                    сейчас</a>
             </div>
         </nav>
     </header>
     <main>
         <div class="pricing">
-            <div class="pricing__sub-title sub-title">plan your life</div>
-            <div class="pricing__title title">Pricing</div>
+            <div class="info">
+                <div class="pricing__sub-title sub-title">Планируй свою жизнь</div>
+                <div class="pricing__title title">Цены</div>
+            </div>
             <div class="base-and-pro">
                 <div class="base price">
                     <div class="base-and-pro__sub-title sub-title">base</div>
                     <div class="base__cost base-and-pro__cost">FREE</div>
-                    <div class="base__text base-and-pro__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur mollitia vel, nulla laborum aut quae ea optio impedit aliquam explicabo.</div>
+                    <div class="base__text base-and-pro__text">Все базовые возможности, в приложении будет реклама</div>
                 </div>
                 <div class="pro price">
                     <div class="base-and-pro__sub-title sub-title">pro</div>
-                    <div class="pro__cost base-and-pro__cost">5.99$</div>
-                    <div class="pro__text base-and-pro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolorem neque dignissimos labore voluptatibus aspernatur?</div>
+                    <div class="pro__cost base-and-pro__cost">1.99$</div>
+                    <div class="pro__text base-and-pro__text">Без рекламы</div>
                 </div>
                 <div class="ultra price">
                     <div class="base-and-pro__sub-title sub-title">ultra</div>
-                    <div class="ultra__cost base-and-pro__cost">12.99$</div>
-                    <div class="ultra__text base-and-pro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perspiciatis quae excepturi harum error impedit molestias culpa dolorum? Impedit molestias velit quasi ad tempore animi officiis omnis necessitatibus est laudantium.</div>
+                    <div class="ultra__cost base-and-pro__cost">5.99$</div>
+                    <div class="ultra__text base-and-pro__text">Без рекламы, можно получать личные советы в чате с консультантом</div>
                 </div>
             </div>
         </div>
@@ -65,4 +77,5 @@
         <i class="fa-solid fa-heart"></i>
     </footer>
 </body>
+
 </html>
