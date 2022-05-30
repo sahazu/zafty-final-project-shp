@@ -329,7 +329,7 @@ main {
 		}
 	}
 	.bottom {
-		width: 337px;
+		max-width: 337px;
 		height: 43px;
 		display: flex;
 		margin: 0 auto;
@@ -459,11 +459,11 @@ main {
 	align-items: center;
 	height: 70px;
 	.info {
+		margin-right: 32px;
 		.when {
 			color: #8d8d8d;
 			font-weight: 400;
 			text-align: center;
-			margin-right: 32px;
 			font-style: normal;
 			font-size: 10px;
 			line-height: 15px;
@@ -474,7 +474,6 @@ main {
 			color: #8d8d8d;
 			font-weight: 400;
 			text-align: center;
-			margin-right: 32px;
 			font-style: normal;
 			font-size: 10px;
 			line-height: 15px;
@@ -711,9 +710,8 @@ main {
 	}
 	.base-and-pro {
 		display: flex;
-		flex-flow: column;
+		flex-direction: column;
 		align-items: center;
-		margin: auto;
 		.ultra {
 			padding-bottom: 100px;
 		}
@@ -736,6 +734,9 @@ main {
 			flex-flow: wrap;
 			&__line {
 				display: none;
+			}
+			&__item {
+				margin: 20px;
 			}
 		}
 		.bottom {
@@ -803,8 +804,20 @@ main {
 		}
 	}
 	.footer {
+
+		.info {
+			margin-right: 10px;
+			.when {
+				padding-right: 0;
+				padding-left: 0;
+			}
+			.thx {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
 		.fa-heart{
-			margin-left: 5px;
+			margin-left: 10px;
 		}
 	}
 }

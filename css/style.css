@@ -481,7 +481,7 @@ main {
 }
 
 .features .bottom {
-  width: 337px;
+  max-width: 337px;
   height: 43px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,11 +663,14 @@ main {
   height: 70px;
 }
 
+.footer .info {
+  margin-right: 32px;
+}
+
 .footer .info .when {
   color: #8d8d8d;
   font-weight: 400;
   text-align: center;
-  margin-right: 32px;
   font-style: normal;
   font-size: 10px;
   line-height: 15px;
@@ -679,7 +682,6 @@ main {
   color: #8d8d8d;
   font-weight: 400;
   text-align: center;
-  margin-right: 32px;
   font-style: normal;
   font-size: 10px;
   line-height: 15px;
@@ -1015,12 +1017,11 @@ main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: auto;
   }
   .base-and-pro .ultra {
     padding-bottom: 100px;
@@ -1048,6 +1049,9 @@ main {
   }
   .features .tools__line {
     display: none;
+  }
+  .features .tools__item {
+    margin: 20px;
   }
   .features .bottom {
     margin-bottom: 50px;
@@ -1131,7 +1135,18 @@ main {
             align-items: center;
     text-align: center;
   }
+  .footer .info {
+    margin-right: 10px;
+  }
+  .footer .info .when {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .footer .info .thx {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .footer .fa-heart {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }
