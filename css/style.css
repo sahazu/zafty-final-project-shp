@@ -110,6 +110,10 @@ body {
           transform: scale(1.3);
 }
 
+.header .nav .menu__logo:active {
+  background-color: #4062de;
+}
+
 .header .nav .menu__link {
   margin-right: 32px;
   font-style: normal;
